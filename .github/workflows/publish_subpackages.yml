@@ -27,6 +27,7 @@ jobs:
             echo "=========================================="
             git clone "https://github.com/Tominaka-Laboratory/orochi.${pkg}.git" "orochi.${pkg}"
             cd "orochi.${pkg}"
+            git fetch --tags
             python -m build
             python -m twine check dist/*
             cp dist/* ../all_dist/
@@ -37,9 +38,19 @@ jobs:
         run: |
           ls -la all_dist/
 
+      - name: Check token availability
+        env:
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          echo "TWINE_PASSWORD length: ${#TWINE_PASSWORD}"
+          if [ -z "$TWINE_PASSWORD" ]; then
+            echo "ERROR: PYPI_API_TOKEN secret is not set or not accessible to this repository!"
+            exit 1
+          fi
+
       - name: Publish all subpackages to PyPI
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
-          python -m twine upload --skip-existing all_dist/*
+          python -m twine upload --verbose --skip-existing all_dist/*
