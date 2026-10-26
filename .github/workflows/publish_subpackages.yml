@@ -1,0 +1,45 @@
+name: Publish Subpackages to PyPI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-subpackages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install build twine
+
+      - name: Clone, build, and collect all subpackages
+        run: |
+          mkdir all_dist
+          subpkgs=("base" "fit" "pdfget" "pdfsim" "phase" "pipeline" "pixia" "tutorial" "ui" "view")
+          for pkg in "${subpkgs[@]}"; do
+            echo "=========================================="
+            echo " Cloning & Building orochi.${pkg}"
+            echo "=========================================="
+            git clone "https://github.com/Tominaka-Laboratory/orochi.${pkg}.git" "orochi.${pkg}"
+            cd "orochi.${pkg}"
+            python -m build
+            python -m twine check dist/*
+            cp dist/* ../all_dist/
+            cd ..
+          done
+
+      - name: List built distribution files
+        run: |
+          ls -la all_dist/
+
+      - name: Publish all subpackages to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          python -m twine upload --skip-existing all_dist/*
