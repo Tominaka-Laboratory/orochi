@@ -1,0 +1,10 @@
+orochi.base
+orochi.pixia
+orochi.pdfget
+orochi.phase
+orochi.pdfsim
+orochi.fit
+orochi.ui
+orochi.pipeline
+orochi.tutorial
+orochi.view

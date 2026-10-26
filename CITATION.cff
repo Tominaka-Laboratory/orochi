@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use Orochi in your research, please cite it as below."
+title: "Orochi: A Physics-Grounded Python Package for Pair Distribution Function Analysis of Crystalline and Low-Dimensional Materials"
+authors:
+  - family-names: "Tominaka"
+    given-names: "Satoshi"
+    orcid: "https://orcid.org/0000-0001-9257-2342"
+    affiliation: "National Institute for Materials Science (NIMS)"
+type: article
+journal: "ChemRxiv"
+year: 2026
+url: "https://chemrxiv.org/doc/d84591ff-85b9-489c-839a-4f7170dcc1c4"
+repository-code: "https://github.com/Tominaka-Laboratory/orochi"
+license: "GPL-3.0-or-later"
+keywords:
+  - "pair distribution function"
+  - "total scattering"
+  - "x-ray diffraction"
+  - "crystallography"
+  - "nanoparticles"
+  - "nanosheets"
+
