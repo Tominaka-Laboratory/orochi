@@ -115,7 +115,7 @@ If the above does not work, you can use ``pip`` to download and install the late
 
 ::
 
-    pip install orochi
+    pip install orochi-suite
 
 ---
 **Installing Individual Packages**
