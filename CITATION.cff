@@ -9,8 +9,8 @@ authors:
 type: article
 journal: "ChemRxiv"
 year: 2026
-doi: "10.26434/chemrxiv.15010802"
-url: "https://doi.org/10.26434/chemrxiv.15010802"
+doi: "10.26434/chemrxiv.15010802/v2"
+url: "https://doi.org/10.26434/chemrxiv.15010802/v2"
 repository-code: "https://github.com/Tominaka-Laboratory/orochi"
 license: "GPL-3.0-or-later"
 keywords:

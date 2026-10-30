@@ -19,8 +19,8 @@ orochi
 
 |CI| |Codecov| |Black| |Tracking|
 
-.. |ChemRxiv| image:: https://img.shields.io/badge/ChemRxiv-10.26434%2Fchemrxiv.15010802-blue.svg
-     :target: https://doi.org/10.26434/chemrxiv.15010802
+.. |ChemRxiv| image:: https://img.shields.io/badge/ChemRxiv-10.26434%2Fchemrxiv.15010802%2Fv2-blue.svg
+     :target: https://doi.org/10.26434/chemrxiv.15010802/v2
 
 .. |Black| image:: https://img.shields.io/badge/code_style-black-black
      :target: https://github.com/psf/black
@@ -45,11 +45,6 @@ orochi
 ---
 Orochi: An Ecosystem Framework for Parameter Management in Scientific Computing
 ---
-
-.. note::
-   **Preprint Available**:
-   S. Tominaka, *"Orochi: A Physics-Grounded Python Package for Pair Distribution Function Analysis of Crystalline and Low-Dimensional Materials"*, *ChemRxiv* (2026).
-   DOI: `10.26434/chemrxiv.15010802 <https://doi.org/10.26434/chemrxiv.15010802>`_
 
 The **Orochi** framework draws inspiration from the legendary Japanese eight-headed serpent, **Yamata no Orochi**. Just as the mythical creature's heads and tails emanate from a powerful central body, the Orochi Python packages are designed around a **unified core for parameter management**, enabling the coordinated operation of diverse functionalities. At its heart, ``orochi.base`` acts as this central "body," from which specialized modules branch out like distinct "heads," each leveraging the core's robust parameter system.
 
@@ -214,8 +209,8 @@ Orochi is developed as an academic open-source project. If you use Orochi in sci
       author  = {Tominaka, Satoshi},
       journal = {ChemRxiv},
       year    = {2026},
-      doi     = {10.26434/chemrxiv.15010802},
-      url     = {https://doi.org/10.26434/chemrxiv.15010802}
+      doi     = {10.26434/chemrxiv.15010802/v2},
+      url     = {https://doi.org/10.26434/chemrxiv.15010802/v2}
     }
 
 For citations of individual sub-packages (e.g., ``orochi.base``, ``orochi.pixia``, ``orochi.pdfget``), please refer to their respective repositories.
