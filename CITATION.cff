@@ -9,7 +9,8 @@ authors:
 type: article
 journal: "ChemRxiv"
 year: 2026
-url: "https://chemrxiv.org/doc/d84591ff-85b9-489c-839a-4f7170dcc1c4"
+doi: "10.26434/chemrxiv.15010802"
+url: "https://doi.org/10.26434/chemrxiv.15010802"
 repository-code: "https://github.com/Tominaka-Laboratory/orochi"
 license: "GPL-3.0-or-later"
 keywords:
@@ -19,4 +20,3 @@ keywords:
   - "crystallography"
   - "nanoparticles"
   - "nanosheets"
-

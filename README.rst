@@ -1,7 +1,7 @@
 .. image:: images/orochi_icon.png
    :align: center
    :width: 80px
-   :target: https://Tominaka-Laboratory.github.io/orochi
+   :target: https://github.com/Tominaka-Laboratory/orochi
    :alt: Orochi Logo
 
 ======
@@ -9,18 +9,18 @@ orochi
 ======
 
 .. |title| replace:: orochi
-.. _title: https://Tominaka-Laboratory.github.io/orochi
+.. _title: https://github.com/Tominaka-Laboratory/orochi
 
 .. |Icon| image:: images/orochi_icon.png
-   :target: https://Tominaka-Laboratory.github.io/orochi
+   :target: https://github.com/Tominaka-Laboratory/orochi
    :height: 100px
 
 |PyPi| |PythonVersion| |PR| |ChemRxiv|
 
 |CI| |Codecov| |Black| |Tracking|
 
-.. |ChemRxiv| image:: https://img.shields.io/badge/ChemRxiv-Preprint-blue
-     :target: https://chemrxiv.org/doc/d84591ff-85b9-489c-839a-4f7170dcc1c4
+.. |ChemRxiv| image:: https://img.shields.io/badge/ChemRxiv-10.26434%2Fchemrxiv.15010802-blue.svg
+     :target: https://doi.org/10.26434/chemrxiv.15010802
 
 .. |Black| image:: https://img.shields.io/badge/code_style-black-black
      :target: https://github.com/psf/black
@@ -33,11 +33,11 @@ orochi
 
 .. |PR| image:: https://img.shields.io/badge/PR-Welcome-29ab47ff
 
-.. |PyPi| image:: https://img.shields.io/pypi/v/orochi
-     :target: https://pypi.org/project/orochi/
+.. |PyPi| image:: https://img.shields.io/pypi/v/orochi-suite
+     :target: https://pypi.org/project/orochi-suite/
 
-.. |PythonVersion| image:: https://img.shields.io/pypi/pyversions/orochi
-     :target: https://pypi.org/project/orochi/
+.. |PythonVersion| image:: https://img.shields.io/pypi/pyversions/orochi-suite
+     :target: https://pypi.org/project/orochi-suite/
 
 .. |Tracking| image:: https://img.shields.io/badge/issue_tracking-github-blue
      :target: https://github.com/Tominaka-Laboratory/orochi/issues
@@ -45,6 +45,11 @@ orochi
 ---
 Orochi: An Ecosystem Framework for Parameter Management in Scientific Computing
 ---
+
+.. note::
+   **Preprint Available**:
+   S. Tominaka, *"Orochi: A Physics-Grounded Python Package for Pair Distribution Function Analysis of Crystalline and Low-Dimensional Materials"*, *ChemRxiv* (2026).
+   DOI: `10.26434/chemrxiv.15010802 <https://doi.org/10.26434/chemrxiv.15010802>`_
 
 The **Orochi** framework draws inspiration from the legendary Japanese eight-headed serpent, **Yamata no Orochi**. Just as the mythical creature's heads and tails emanate from a powerful central body, the Orochi Python packages are designed around a **unified core for parameter management**, enabling the coordinated operation of diverse functionalities. At its heart, ``orochi.base`` acts as this central "body," from which specialized modules branch out like distinct "heads," each leveraging the core's robust parameter system.
 
@@ -156,7 +161,7 @@ To launch interactive Gradio web interfaces with 3D structure visualization and 
     python tutorials/02_ceo2_nanoparticle_explicit_vs_analytical/run_tutorial.py --gui
     python tutorials/03_pto2_nanosheet_2d_pbc/run_tutorial.py --gui
 
-For more detailed information and tutorials, please consult our `online documentation <https://Tominaka-Laboratory.github.io/orochi>`.
+For more detailed information and tutorials, please consult our `online documentation <https://github.com/Tominaka-Laboratory/orochi>`.
 
 ----------------------
 Origins and Philosophy
@@ -209,7 +214,8 @@ Orochi is developed as an academic open-source project. If you use Orochi in sci
       author  = {Tominaka, Satoshi},
       journal = {ChemRxiv},
       year    = {2026},
-      url     = {https://chemrxiv.org/doc/d84591ff-85b9-489c-839a-4f7170dcc1c4}
+      doi     = {10.26434/chemrxiv.15010802},
+      url     = {https://doi.org/10.26434/chemrxiv.15010802}
     }
 
 For citations of individual sub-packages (e.g., ``orochi.base``, ``orochi.pixia``, ``orochi.pdfget``), please refer to their respective repositories.
